@@ -1,0 +1,23 @@
+:root{
+        --cp-primary: #007C5F;
+        --cp-secondary: #007C5F60;
+        --cp-input-bg: #000;
+        --cp-input-border: #000;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-home img{
+    max-height: 40px !important;
+}
+
+.btn-default {
+    background-color: var(--cp-primary) !important;
+    color: #fff !important;
+}
+
+.btn .es-icon, .btn .icon {
+    stroke: #fff !important; 
+}

@@ -10,8 +10,8 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/cp_theme/css/cp_theme.css"
-# app_include_js = "/assets/cp_theme/js/cp_theme.js"
+app_include_css = "/assets/cp_theme/css/cp_theme.css"
+app_include_js = "/assets/cp_theme/js/cp_theme.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/cp_theme/css/cp_theme.css"

@@ -1,6 +1,6 @@
 :root{
-        --cp-primary: #007C5F;
-        --cp-secondary: #007C5F60;
+        --cp-primary: #29348e;
+        --cp-secondary: #29348e95;
         --cp-input-bg: #000;
         --cp-input-border: #000;
 }
@@ -20,4 +20,17 @@
 
 .btn .es-icon, .btn .icon {
     stroke: #fff !important; 
+}
+
+.list-sidebar-button, .awesomplete .input-with-feedback, .form-control {
+    background: #fff !important;
+    border: var(--cp-primary) 1px solid;
+    color: var(--cp-primary) !important;
+}
+.list-sidebar-button .icon{
+    stroke: var(--cp-primary) !important;
+}
+
+.btn-paging {
+    background-color: var(--cp-secondary) !important;
 }

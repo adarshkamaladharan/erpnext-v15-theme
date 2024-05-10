@@ -1,14 +1,8 @@
-console.log("Hooray..");
-
 frappe.provide("frappe.views");
-// frappe.ui.form.on('your_doctype', 'refresh', function(frm) {
-//     // Your custom JS code specific to 'your_doctype' goes here
-//     console.log("This code runs only on 'your_doctype' DocType");
-//   });
 
 frappe.views.ImageView = class ImageView extends frappe.views.ListView {
 	get view_name() {
-		return "Image View";
+		return "Images";
 	}
 
 	setup_defaults() {
@@ -77,8 +71,17 @@ frappe.views.ImageView = class ImageView extends frappe.views.ListView {
 		let set = false;
 		info_fields.forEach((field, index) => {
 			if (item[field] && !set) {
-				if (index == 0) info_html += `<li>${__(item[field])}</li>`;
-				else info_html += `<li class="text-muted">${__(item[field])}</li>`;
+                
+                if (field === 'status') {
+                    let statusClass = "active";
+                    if (item[field] === 'Inactive') statusClass = "inactive";
+                    
+                    info_html += `<li><span class="emp-status-${statusClass}">${__(item[field])}</span></li>`;
+                }
+                    
+				
+                else info_html += `<li>${__(item[field])}</li>`;
+				
 				// set = true;
 			}
 		});

@@ -32,6 +32,69 @@
     height: 60px;
 }
 
-.navbar-home img{
+.navbar-home img {
     max-height: 40px !important;
 }
+
+.image-view-info {
+    display: flex;
+    list-style: none;
+}
+
+.image-view-info li {
+    margin-right: 5px;
+}
+
+.image-view-info li:not(:last-child)::after {
+    content: "|";
+    margin-left: 5px;
+    color: #000;
+}
+
+.emp-status-inactive {
+    font-weight: 700;
+    color: red;
+}
+
+.emp-status-active {
+    font-weight: 700;
+    color: green;
+}
+
+.dropdown-notifications .es-icon {
+    stroke: #e2e2e2 !important;
+}
+
+.dropdown-help button span {
+    color: #fff !important;
+}
+
+
+/* Image */
+/* .image-view-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.image-view-body {
+    width: 20%;
+}
+
+.image-view-body .image-field {
+    width: 100%;
+}
+
+.image-view-footer {
+    flex: 1;
+    padding-left: 10px; 
+}
+
+.image-view-info {
+    list-style: none;
+    padding: 0;
+}
+
+.image-view-info li {
+    margin-bottom: 5px; 
+} */

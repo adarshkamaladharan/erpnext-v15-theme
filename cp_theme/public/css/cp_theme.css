@@ -69,6 +69,29 @@
     color: #fff !important;
 }
 
+.shortcut-widget-box .widget-head {
+    border: 1px solid #29348e;
+    padding: 4px 5px;
+    border-radius: 2px;
+}
+
+.shortcut-widget-box .widget-head:hover {
+    border: 1px solid #4b52b9 !important;
+    background-color: #4b52b9 !important;
+}
+
+.widget .widget-head .widget-label .widget-title {
+    color: #29348e !important;
+}
+
+.shortcut-widget-box .widget-head:hover .widget-title {
+    color: #fff !important;
+}
+
+.widget.links-widget-box .widget-head .widget-label .widget-title {
+    color: #29348e !important;
+    border-bottom: 1px solid #29348e;
+}
 
 /* Image */
 /* .image-view-item {

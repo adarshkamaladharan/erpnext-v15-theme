@@ -1,17 +1,10 @@
-:root{
+/* :root{
         --cp-primary: #29348e;
         --cp-secondary: #29348e95;
         --cp-input-bg: #000;
         --cp-input-border: #000;
 }
 
-.navbar {
-    height: 60px;
-}
-
-.navbar-home img{
-    max-height: 40px !important;
-}
 
 .btn-default {
     background-color: var(--cp-primary) !important;
@@ -33,4 +26,12 @@
 
 .btn-paging {
     background-color: var(--cp-secondary) !important;
+} */
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-home img{
+    max-height: 40px !important;
 }

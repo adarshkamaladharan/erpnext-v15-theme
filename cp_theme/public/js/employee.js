@@ -1,19 +1,12 @@
-console.log("Hooray..");
-
-frappe.provide("frappe.views");
-// frappe.ui.form.on('your_doctype', 'refresh', function(frm) {
-//     // Your custom JS code specific to 'your_doctype' goes here
-//     console.log("This code runs only on 'your_doctype' DocType");
-//   });
-
+console.log("emplkoyee js..")
 frappe.views.ImageView = class ImageView extends frappe.views.ListView {
 	get view_name() {
-		return "Image View";
+		return "Images...";
 	}
 
 	setup_defaults() {
 		return super.setup_defaults().then(() => {
-			this.page_title = this.page_title + " " + __("Gallery");
+			this.page_title = this.page_title + " " + __("Images");
 		});
 	}
 
@@ -124,7 +117,7 @@ frappe.views.ImageView = class ImageView extends frappe.views.ListView {
 						<div class="image-field"
 							data-name="${encoded_name}"
 						>
-							${_html}        
+							${_html}
 						</div>
 					</a>
 					${expand_button_html}
